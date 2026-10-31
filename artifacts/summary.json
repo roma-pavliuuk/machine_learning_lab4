@@ -1,0 +1,117 @@
+{
+  "reference": {
+    "rev": null,
+    "md5": "c6cfcbbe784ee2407a235ddb309f9736",
+    "pointer": "/home/roman/machine learning/lab_03/data/raw/lab2_feature_matrix.csv.dvc"
+  },
+  "control": {
+    "blobs_best_C": 3
+  },
+  "spaces": [
+    {
+      "простір": "wide",
+      "розмірність": 30,
+      "пояснена дисперсія": 0.7787793025095711,
+      "вхідна розмірність": 219
+    },
+    {
+      "простір": "kde",
+      "розмірність": 4,
+      "пояснена дисперсія": 0.4029320160004936,
+      "вхідна розмірність": 219
+    }
+  ],
+  "gmm": {
+    "C": 4,
+    "covariance": "full",
+    "k": 1983,
+    "D": 30,
+    "bic_min": 111450.3935906552,
+    "ari_ninit1": 0.8213253971581801,
+    "ari_ninit10": 0.7774864616567958,
+    "stable": true,
+    "sizes": {
+      "0": 42,
+      "1": 562,
+      "2": 198,
+      "3": 198
+    },
+    "bootstrap_ari_mean": 0.7271390697924278,
+    "bootstrap_ari_sd": 0.16076009900327246
+  },
+  "null": {
+    "C": 5,
+    "covariance": "diag",
+    "bic_min": 121223.24573415166
+  },
+  "kde": {
+    "h_scott": 1.97607239415328,
+    "h_best": 2.954917446202008,
+    "d": 4
+  },
+  "anomalies": {
+    "jaccard": {
+      "KDE (d=4)": {
+        "KDE (d=4)": 1.0,
+        "GMM (D=30)": 0.28205128205128205,
+        "IsolationForest (D=30)": 0.3698630136986301
+      },
+      "GMM (D=30)": {
+        "KDE (d=4)": 0.28205128205128205,
+        "GMM (D=30)": 1.0,
+        "IsolationForest (D=30)": 0.3888888888888889
+      },
+      "IsolationForest (D=30)": {
+        "KDE (d=4)": 0.3698630136986301,
+        "GMM (D=30)": 0.3888888888888889,
+        "IsolationForest (D=30)": 1.0
+      }
+    }
+  },
+  "manifold": {
+    "n_points": 1000,
+    "trustworthiness": {
+      "t-SNE p=50": 0.9503,
+      "t-SNE": 0.9487,
+      "t-SNE p=30": 0.9487,
+      "t-SNE p=5": 0.9318,
+      "Isomap": 0.8175,
+      "LLE": 0.7764,
+      "PCA": 0.7673
+    }
+  },
+  "umap": {
+    "train": 0.9163571527407144,
+    "out_of_sample": 0.9043951280222623
+  },
+  "risk": {
+    "jaccard": 0.010101010101010102,
+    "overlap": 1,
+    "entropy_median": 5.566755387935096e-12,
+    "entropy_max": 0.6787636547076692
+  },
+  "blocks": {
+    "variance_share": {
+      "German Credit": 0.1598,
+      "сигнал Home Credit": 0.0687,
+      "DFS платежів": 0.7685,
+      "час скарги": 0.003
+    },
+    "german_only": {
+      "C": 5,
+      "covariance": "full",
+      "ari_ninit1": 0.3380400711821767,
+      "ari_vs_full": 0.020016508107869917
+    }
+  },
+  "envelope": {
+    "ari": -0.0016864261199575831,
+    "ari_german_only": 0.027094285758077166,
+    "bad_share_by_cluster": {
+      "0": 0.31,
+      "1": 0.302,
+      "2": 0.328,
+      "3": 0.263
+    }
+  }
+}
